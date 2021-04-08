@@ -18,6 +18,10 @@ nav a{
     color: #1a0dab;
     text-decoration: none;
 }
+.main_element{
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
 a:hover{
     text-decoration: underline;
 }
@@ -25,23 +29,59 @@ nav img{
     height: 20px;
 }
 main{
-    width: 50%;
-    margin: 1em auto;
-    text-align: center;
+    /* width: 50%;
+    text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3em auto;
+    /* margin-top: 5%; */
 }
-input{
-    width: 80%;
-    padding: 1em;
-    border-radius: 30px;
+.google_img{
+    width: 300px;
+    margin-bottom: 1rem;
+}
+.search_container{
+    display: flex;
+    width: 45%;
+    padding: 0.5em;
+    border-radius: 50px;
     border: 1px solid rgb(204, 203, 203);
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
 }
-.button_container{
-    margin-top: 1.5em;
-}
-.button_container button{
-    padding: 1em;
+.search_container input{
+    width: 90%;
+    height: 30px;
     border: none;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: #555252;
 }
+.voice{
+    width: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* .button_container{
+    margin-top: 1.5em;
+} */
+button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding: 10px 1rem;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 0.5rem;
+}
+button:hover {
+    border: 1px solid #dcdddd;
+    border-radius: 7px;
+    cursor: pointer;
+  }
 .main_element{
     display: inline-block;
     line-height: 20px;
